@@ -1,0 +1,54 @@
+# Implementation Plan: The Makhana House Website
+
+This plan details the implementation of a professional, premium B2B and B2C website for "The Makhana House." We will use vanilla web technology (HTML5, CSS3, ES6 JavaScript) to ensure high performance, total design control, and SEO optimization.
+
+## User Review Required
+
+> [!CAUTION]
+> The single-page website architecture is proposed for smoother transitions and a premium feel, avoiding page load interruptions while still serving all 4 requested pages as scrollable sections. Please review if you prefer strict multi-page loading instead of a smooth-scroll single page.
+
+## Proposed Changes
+
+We will construct the website in `c:/Users/kuldeep.solanke/Downloads/UBS/UBS/First website`.
+
+### Core Application Files
+
+#### [NEW] index.html
+Will serve as our main entry point containing:
+* **Navigation (Sticky)**: English + Hindi headings ("Home / होम", "Products / उत्पाद")
+* **Hero Section**: Premium banner with the tagline "From Farm to Your Table — Pure, Natural Makhana"
+* **Products Section**: Grid showcasing Plain, Flavored, Organic, Bulk, Retail, and Roasted forms.
+* **About Us**: Mission, values, and certifications.
+* **Contact Section**: Lead gen form suited for B2B/B2C, and WhatsApp floating widget.
+
+#### [NEW] styles.css
+A premium, custom vanilla CSS stylesheet implementing:
+* **Color Palette**: 
+  * Primary: Deep Forest Green (#1A4328)
+  * Accent: Amber/Gold (#D4AF37)
+  * Background: Creamy White/Linen (#FAF9F6)
+* **Typography**: Outfit (Headings) + Inter (Body)
+* **Aesthetics**: Glassmorphism highlights, gentle fade-in animations, smooth scrolling (`scroll-behavior: smooth`), and modern grid layouts.
+
+#### [NEW] script.js
+Lightweight JavaScript handling:
+* Sticky navigation styling transitions on scroll
+* Mobile menu toggling
+* Dynamic form interactions (e.g., showing quantity fields based on business type selection)
+
+#### [NEW] Assets / Images
+We will generate custom, natural, aesthetic visual assets:
+* Premium Farm-Fresh Hero Image
+* Product Category thumbnails 
+* Certificate/Farm layout illustrations
+
+## Verification Plan
+
+### Automated / Browser Testing
+1. Use `read_browser_page` tool to verify the local website renders successfully.
+2. Confirm sticky navigation and smooth scrolling operate smoothly.
+
+### Manual Verification
+* User to open `index.html` in their local browser.
+* User checks mobile responsiveness simply by resizing the browser window.
+* Verify WhatsApp link initiates a chat.
